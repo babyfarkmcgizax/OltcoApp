@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\frogg\\source\\repos\\OltcoApp\\OltcoApp.csproj",
+      "projectUniqueName": "C:\\Users\\frogg\\Source\\Repos\\babyfarkmcgizax\\OltcoApp\\OltcoApp.csproj",
       "projectName": "OltcoApp",
-      "projectPath": "C:\\Users\\frogg\\source\\repos\\OltcoApp\\OltcoApp.csproj",
+      "projectPath": "C:\\Users\\frogg\\Source\\Repos\\babyfarkmcgizax\\OltcoApp\\OltcoApp.csproj",
       "packagesPath": "C:\\Users\\frogg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\frogg\\source\\repos\\OltcoApp\\obj\\",
+      "outputPath": "C:\\Users\\frogg\\Source\\Repos\\babyfarkmcgizax\\OltcoApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

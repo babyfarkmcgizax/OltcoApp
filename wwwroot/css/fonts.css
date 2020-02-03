@@ -1,0 +1,377 @@
+body, .regular {
+    font-family: 'Asap', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 18px;
+}
+
+.textblock {
+	font-family: 'Asap', sans-serif;
+}
+
+.din--light {
+    font-family:'DIN Next W01 Light', sans-serif;
+	font-weight: normal!important;
+}
+.din--regular {
+    font-family:'DIN Next W01 Regular', sans-serif;
+	font-weight: normal!important;
+}
+.din--medium {
+    font-family:'DIN Next W01 Medium', sans-serif;
+	font-weight: normal!important;
+}
+.din--bold {
+    font-family:'DIN Next W01 Bold', sans-serif;
+	font-weight: normal!important;
+}
+
+strong, .strong, b {
+	font-weight: 700;
+}
+
+.italic, em {
+	font-style: italic!important;
+}
+
+input, textarea {
+	font-family: 'Asap', sans-serif;
+	font-weight: 400;
+    font-style: normal;	
+}
+
+.white {
+	color: #fff;
+}
+
+.black {
+	color: #0d0d0e;
+}
+
+.text.white {
+	color: #fff;
+}
+
+.text.black {
+	color: #0d0d0e;
+}
+
+.text a {
+	color: #3ab282;
+}
+
+.text.white a {
+	color: #fff;
+}
+
+.text.black a {
+	color: #0d0d0e;
+}
+
+.white a {
+	color: #fff;
+}
+
+.black a {
+	color: #0d0d0e;
+}
+
+.button {
+	font-size: 14px;
+	line-height: 38px;
+	padding-left: 40px;
+	padding-right: 40px;
+	min-width: 180px;	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Asap', sans-serif;
+	font-weight: 500;
+    font-style: normal;
+	-moz-transition: 100ms linear all;
+	-webkit-transition: 100ms linear all;
+	-o-transition: 100ms linear all;
+	transition: 100ms linear all;
+	border: none;
+	opacity: 1;
+	background-color: #1c6047;
+	color: #fff!important;
+}
+
+.textblock .button {
+	margin-right: 20px;
+}
+
+.textblock.centered .button {
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+.textblock.centered {
+	max-width: 990px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.button:hover {
+	background-color: #3ab282;
+}
+
+.button:active {
+	background-color: #3ab282;
+}
+
+.pagination .button {
+	font-size: 15px;
+	line-height: 28px;
+	min-width: 109px;
+}
+
+.pagination .button:hover {
+	-webkit-box-shadow: 2px 3px 4px 0px rgba(0,0,0,0);
+	-moz-box-shadow: 2px 3px 4px 0px rgba(0,0,0,0);
+	box-shadow: 2px 3px 4px 0px rgba(0,0,0,0);
+}
+
+a.button.paginationbuttonon {
+	color: #fff;
+	background-color: #1e518a;
+}
+a.button.paginationbuttonoff {
+	color: #0d0d0e;
+	background-color: #f1f1f1;
+	cursor: default;
+}
+
+.text p, .text ul, .text h1, .text h2, .text h3 {
+	padding-bottom: 35px;
+	margin: 0px;
+}
+
+.textblock .text ul, .iltr .text ul, .textblock.text ul, .twocoltext ul {
+	display: block;
+	padding-left: 20px!important;
+}
+
+.textblock ul li, .iltr .text ul li, .twocoltext ul li {
+	padding-left: 10px;
+	list-style: disc;
+}
+
+.fancytitle {
+	display: block;
+	text-align: center;
+	max-width: 800px;
+	padding-bottom: 30px;
+	margin-left: auto!important;
+	margin-right: auto!important;
+}
+
+.fancytitle .text {
+	display: block;
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-transform: uppercase;
+	font-family:'DIN Next W01 Bold', sans-serif;
+	font-weight: normal!important;
+}
+
+.fancytitle .stripes {
+	display: block;
+	height: 3px;
+	width: 100%;
+	background-image: url(../_images/fancystripes.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 3px;
+}
+
+.fancytitle .text {
+	font-size: 24px;
+	line-height: 32px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 15px;
+}
+
+.text, .text2448 {
+	font-size: 18px;
+	line-height: 36px;
+}
+
+@media screen and (min-width:910px)  {
+	
+	.fancytitle {
+		max-width: 800px;
+		min-width: 500px;
+		padding-bottom: 40px;
+	}
+	
+	.fancytitle .text {
+		font-size: 32px;
+		line-height: 42px;
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-bottom: 20px;
+	}
+		
+	.button {
+		font-size: 16px;
+	}
+	
+	.text, .text2448 {
+		font-size: 24px;
+		line-height: 48px;
+	}
+
+}
+
+@media screen and (min-width:1220px)  {
+	
+	.fancytitle {
+		max-width: 600px;
+		min-width: 500px;
+		padding-bottom: 40px;
+	}
+		
+	.fancytitle .text {
+		font-size: 38px;
+		line-height: 48px;
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-bottom: 20px;
+	}
+	
+}
+
+
+
+.padtop100 {
+	padding-top: 50px;
+}
+.padbottom100 {
+	padding-bottom: 50px;
+}
+.padtop90 {
+	padding-top: 45px;
+}
+.padbottom90 {
+	padding-bottom: 45px;
+}
+.padtop80 {
+	padding-top: 40px;
+}
+.padbottom80 {
+	padding-bottom: 40px;
+}
+.padtop70 {
+	padding-top: 35px;
+}
+.padbottom70 {
+	padding-bottom: 35px;
+}
+.padtop60 {
+	padding-top: 30px;
+}
+.padbottom60 {
+	padding-bottom: 30px;
+}
+.padtop50 {
+	padding-top: 25px;
+}
+.padbottom50 {
+	padding-bottom: 25px;
+}
+.padtop40 {
+	padding-top: 20px;
+}
+.padbottom40 {
+	padding-bottom: 20px;
+}
+.padtop30 {
+	padding-top: 15px;
+}
+.padbottom30 {
+	padding-bottom: 15px;
+}
+.padtop20 {
+	padding-top: 10px;
+}
+.padbottom20 {
+	padding-bottom: 10px;
+}
+.padtop10 {
+	padding-top: 10px;
+}
+.padbottom10 {
+	padding-bottom: 10px;
+}
+
+@media screen and (min-width:768px)  {
+	.padtop100 {
+		padding-top: 100px;
+	}
+	.padbottom100 {
+		padding-bottom: 100px;
+	}
+	.padtop90 {
+		padding-top: 90px;
+	}
+	.padbottom90 {
+		padding-bottom: 90px;
+	}
+	.padtop80 {
+		padding-top: 80px;
+	}
+	.padbottom80 {
+		padding-bottom: 80px;
+	}
+	.padtop70 {
+		padding-top: 70px;
+	}
+	.padbottom70 {
+		padding-bottom: 70px;
+	}
+	.padtop60 {
+		padding-top: 60px;
+	}
+	.padbottom60 {
+		padding-bottom: 60px;
+	}
+	.padtop50 {
+		padding-top: 50px;
+	}
+	.padbottom50 {
+		padding-bottom: 50px;
+	}
+	.padtop40 {
+		padding-top: 40px;
+	}
+	.padbottom40 {
+		padding-bottom: 40px;
+	}
+	.padtop30 {
+		padding-top: 30px;
+	}
+	.padbottom30 {
+		padding-bottom: 30px;
+	}
+	.padtop20 {
+		padding-top: 20px;
+	}
+	.padbottom20 {
+		padding-bottom: 20px;
+	}
+	.padtop10 {
+		padding-top: 10px;
+	}
+	.padbottom10 {
+		padding-bottom: 10px;
+	}
+}
