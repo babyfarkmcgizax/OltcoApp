@@ -3,41 +3,38 @@
 @{
     ViewData["Title"] = "Home page";
 }
+@{Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+
 
 <div class="text-center">
     <h1 class="display-4">Welcome to the start of Oltco's Quotation Web Application</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
     <p>Calculate an estimated quote for an Oltco resin bound installation! No fuss</p>
 </div>
 
-<div class="contain_1440">
+<div class="section quoteformwrap" id="row22889" style="padding-bottom:100px;">
+    <form action="?send=true" method="post" class="quoteform" id="quoteForm">
+        <div class="contain1440">
+            <div class="textblock">
+                <div class="text">
 
-        <div class="contactform stdtext">
-            <div class="twocolwrap table" style="height:auto;">
-                <div class="col col1">
-                    <div class="containerpad">
-                        <div class="fieldgroup">
-                            <h3>Customer Details</h3>
-                            <div class="field"><label for="firstname">Customer Name *</label><div class="fieldwrap"><input name="firstname" type="text" id="firstname" class="stdfield capitalise" data-required="Y" maxlength="45" value=""></div></div>
-                            <div class="field"><label for="addr1">Address</label><div class="fieldwrap"><input name="addr1" type="text" id="addr1" class="stdfield capitalise" data-required="N" maxlength="250" value=""></div></div>
-                            <div class="field"><label for="postcode">Post Code</label><div class="fieldwrap"><input name="postcode" type="text" id="postcode" class="stdfield uppercase" data-required="N" maxlength="10" value=""></div></div>
-                            <div class="field"><label for="tel">Telephone No. *</label><div class="fieldwrap"><input name="tel" type="text" id="tel" class="stdfield" data-required="N" maxlength="45" value=""></div></div>
-                            <div class="field"><label for="email">Email Address *</label><div class="fieldwrap"><input name="email" type="text" id="email" class="stdfield" data-required="N" maxlength="65" value=""></div></div>
+                    <p>Enter your email address and password to login to the portal.</p>
+                    <label for="email" class="stdlabel">Email Address</label><input name="email" class="stdfield" id="email" value="" maxlength="50" data-required="Y" type="text">
+                    <label for="password" class="stdlabel">Password</label><input name="password" class="stdfield" id="password" value="" maxlength="50" data-required="Y" type="password">
+                    <div class="captchawrap">
+                        <div class="securitycheck">
+                            <p>We're pretty sure that you're not a spam bot or a hacker, but just to be certain please enter the characters in the image below.</p>
+                            <div class="codeswrap">
+                                <div class="col col1"><div class="whitewrap"><img src="/_lib/captchawhite.asp" alt="" id="imgCaptcha" /></div><span class="stext"><a href="javascript:void(0)" onClick="RefreshImage('imgCaptcha')" class="refresh">Refresh Code</a></span></div>
+                                <div class="col col2" style="line-height:18px;">=</div>
+                                <div class="col col3"><div class="whitewrap"><input name="captchacode" class="" id="captchacode" maxlength="6" tabindex="3" autocomplete="off" type="text"></div><span class="stext">Enter Code</span></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col col2">
-                    <div class="containerpad">
-                        <div class="fieldgroup">
-                            <h3>Project</h3>
-                            <div class="fieldnote">What is the approximate flooring area in metres squared? (m<sup>2</sup>)?</div>
-                            <div class="field hidelabelonmobile"><label for="area">Area (m<sup>2</sup>)</label><div class="fieldwrap"><input name="area" type="text" id="area" class="stdfield capitalise" data-required="N" maxlength="25" value=""></div></div>
-                            <div class="fieldnote">What is the make up of the surface to cover (i.e. concrete, soil)?</div>
-                            <div class="field hidelabelonmobile"><label for="surface">Surface</label><div class="fieldwrap"><input name="surface" type="text" id="surface" class="stdfield capitalise" data-required="N" maxlength="250" value=""></div></div>
-                        </div>
-                    </div>
+                    <input class="button blue" value="Submit" id="loginbutton" style="margin-top:20px;" type="submit">
                 </div>
             </div>
         </div>
+    </form>
 </div>
-
