@@ -1,0 +1,51 @@
+﻿@page
+@model OltcoApp.Pages.CustomerDetailsModel
+@{
+    ViewData["Title"] = "Details";
+}
+
+@{Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+    <div class="contain_1440">
+        <div>
+            <h4>Customer</h4>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.customer.customer_name)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.customer.customer_name)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.customer.customer_address)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.customer.customer_address)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.customer.phone_number)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.customer.phone_number)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.customer.postcode)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.customer.postcode)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.customer.email)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.customer.email)
+                </dd>
+            </dl>
+        </div>
+        <div>
+            <a asp-page="./EditCustomer" asp-route-id="@Model.customer.ID">Edit</a> |
+            <a asp-page="./CustomerIndex">Back to List</a>
+        </div>
+    </div>

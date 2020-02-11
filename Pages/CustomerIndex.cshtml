@@ -1,0 +1,70 @@
+﻿@page
+@model OltcoApp.Pages.CustomerIndexModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+@{Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+    <div class="contain_1440">
+        <h2>Index</h2>
+        <p>
+            <a asp-page="CreateCustomer">Create New</a>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.customer[0].ID)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.customer[0].customer_name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.customer[0].customer_address)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.customer[0].phone_number)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.customer[0].postcode)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.customer[0].email)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.customer)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ID)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.customer_name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.customer_address)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.phone_number)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.postcode)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.email)
+                        </td>
+                        <td>
+                            <a asp-page="./EditCustomer" asp-route-id="@item.ID">Edit</a> |
+                            <a asp-page="./CustomerDetails" asp-route-id="@item.ID">Details</a> |
+                            <a asp-page="./DeleteCustomer" asp-route-id="@item.ID">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
