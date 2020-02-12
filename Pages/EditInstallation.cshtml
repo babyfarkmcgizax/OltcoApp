@@ -1,0 +1,53 @@
+﻿@page
+@model OltcoApp.Pages.EditInstallationModel
+@{
+    ViewData["Title"] = "Edit";
+}
+
+@{Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+<div class="contain_1440">
+    <h2>Edit</h2>
+    <h4>Customer</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+			<form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+					<div class="form-group">
+                        <label asp-for="installation.installation_cost" class="control-label"></label>
+                        <input asp-for="installation.installation_cost" class="form-control" />
+                        <span asp-validation-for="installation.installation_cost" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="installation.installation_extras" class="control-label"></label>
+                        <input asp-for="installation.installation_extras" class="form-control" />
+                        <span asp-validation-for="installation.installation_extras" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="installation.installation_size" class="control-label"></label>
+                        <input asp-for="installation.installation_size" class="form-control" />
+                        <span asp-validation-for="installation.installation_size" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="installation.stone_reading_humidity" class="control-label"></label>
+                        <input asp-for="installation.stone_reading_humidity" class="form-control" />
+                        <span asp-validation-for="installation.stone_reading_humidity" class="text-danger"></span>
+                    </div>
+					<div class="form-group">
+                        <label asp-for="installation.stone_reading_temperature" class="control-label"></label>
+                        <input asp-for="installation.stone_reading_temperature" class="form-control" />
+                        <span asp-validation-for="installation.stone_reading_temperature" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Save" class="btn btn-default" />
+                    </div>
+            </form>
+		</div>
+	</div>
+				<div>
+				<a asp-page="./InstallationIndex">Back to List</a>
+				</div>
+</div>
+        @section Scripts {
+            @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}}
