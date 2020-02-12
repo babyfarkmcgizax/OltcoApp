@@ -1,0 +1,74 @@
+﻿@page
+@model OltcoApp.Pages.InstallationIndexModel
+@{
+}
+@{
+    ViewData["Title"] = "Index";
+}
+
+@{Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<div class="contain_1440">
+    <h2>Index</h2>
+    <p>
+        <a asp-page="CreateInstallation">Create New Installation</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+
+                    @Html.DisplayNameFor(model => model.installation[0].installation_id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.installation[0].installation_cost)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.installation[0].installation_extras)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.installation[0].installation_size)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.installation[0].stone_reading_humidity)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.installation[0].stone_reading_temperature)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var item in Model.installation)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.installation_id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.installation_cost)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.installation_extras)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.installation_size)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.stone_reading_humidity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.stone_reading_temperature)
+                </td>
+                <td>
+                    <a asp-page="./EditInstallation" asp-route-id="@item.installation_id">Edit</a> |
+                    <a asp-page="./InstallationDetails" asp-route-id="@item.installation_id">Details</a> |
+                    <a asp-page="./DeleteInstallation" asp-route-id="@item.installation_id">Delete</a>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

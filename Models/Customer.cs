@@ -14,5 +14,6 @@ namespace OltcoApp.Models
         public string phone_number { get; set; }
         public string postcode { get; set; }
         public string email { get; set; }
+
     }
 }

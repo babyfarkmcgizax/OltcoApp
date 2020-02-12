@@ -12,8 +12,9 @@ namespace OltcoApp.Models
     {
         string connectionString = "Server=tcp:oltcoserver.database.windows.net,1433;Initial Catalog=oltcoDatabase;Persist Security Info=False;User ID=emmag;Password=Flooring1!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
-        //To View all customer details    
-        public IEnumerable<Customer> GetAllCustomers()
+        // adding Installation Details
+        //To View all customer and installation details    
+        public IEnumerable<Customer> GetAllCustomers() //(already added installation table to procedure)
         {
             List<Customer> lstcustomer = new List<Customer>();
 
@@ -104,6 +105,7 @@ namespace OltcoApp.Models
                     customer.phone_number = rdr["phone_number"].ToString();
                     customer.postcode = rdr["postcode"].ToString();
                     customer.email = rdr["email"].ToString();
+
                 }
             }
             return customer;
@@ -119,11 +121,13 @@ namespace OltcoApp.Models
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 cmd.Parameters.AddWithValue("@customer_id", id);
+                //cmd.Parameters.AddWithValue("@installation_id", id);
 
                 con.Open();
                 cmd.ExecuteNonQuery();
                 con.Close();
             }
         }
+
     }
 }
