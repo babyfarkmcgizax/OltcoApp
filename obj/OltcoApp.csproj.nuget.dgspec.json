@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\frogg\\source\\repos\\babyfarkmcgizax\\OltcoApp\\OltcoApp.csproj": {}
+    "C:\\Users\\frogg\\source\\repos\\OltcoTest\\OltcoApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\frogg\\source\\repos\\babyfarkmcgizax\\OltcoApp\\OltcoApp.csproj": {
+    "C:\\Users\\frogg\\source\\repos\\OltcoTest\\OltcoApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\frogg\\source\\repos\\babyfarkmcgizax\\OltcoApp\\OltcoApp.csproj",
+        "projectUniqueName": "C:\\Users\\frogg\\source\\repos\\OltcoTest\\OltcoApp.csproj",
         "projectName": "OltcoApp",
-        "projectPath": "C:\\Users\\frogg\\source\\repos\\babyfarkmcgizax\\OltcoApp\\OltcoApp.csproj",
+        "projectPath": "C:\\Users\\frogg\\source\\repos\\OltcoTest\\OltcoApp.csproj",
         "packagesPath": "C:\\Users\\frogg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\frogg\\source\\repos\\babyfarkmcgizax\\OltcoApp\\obj\\",
+        "outputPath": "C:\\Users\\frogg\\source\\repos\\OltcoTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -73,7 +73,7 @@
             },
             {
               "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.0.1, 3.0.1]"
+              "version": "[3.0.3, 3.0.3]"
             }
           ],
           "frameworkReferences": {
@@ -84,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

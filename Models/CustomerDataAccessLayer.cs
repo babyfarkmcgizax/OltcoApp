@@ -10,7 +10,7 @@ namespace OltcoApp.Models
 {
     public class CustomerDataAccessLayer
     {
-        string connectionString = "Server=tcp:oltcoserver.database.windows.net,1433;Initial Catalog=oltcoDatabase;Persist Security Info=False;User ID=emmag;Password=Flooring1!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        string connectionString = "Server=tcp:oltcotest1.database.windows.net,1433;Initial Catalog=OltcoTest1;Persist Security Info=False;User ID=emmagreening;Password=Muldermoo1!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
         // adding Installation Details
         //To View all customer and installation details    
