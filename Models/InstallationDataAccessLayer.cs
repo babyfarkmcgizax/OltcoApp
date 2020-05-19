@@ -10,9 +10,11 @@ namespace OltcoApp.Models
 {
     public class InstallationDataAccessLayer
     {
-        string connectionString = "Server=tcp:oltcotest1.database.windows.net,,1433;Initial Catalog=OltcoTest1;Persist Security Info=False;User ID=emmagreening;Password=Muldermoo1!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+    
+        string connectionString = "Server=tcp:oltcotest1.database.windows.net,1433;Initial Catalog = OltcoTest1; Persist Security Info=False;User ID = emmagreening; Password=Muldermoo1!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout = 30;";
 
-        // adding Installation Details
+            
+         // adding Installation Details
         //To View all installation details    
         public IEnumerable<Installation> GetAllInstallations()
         {

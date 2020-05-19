@@ -12,6 +12,7 @@ namespace OltcoApp.Models
     {
         string connectionString = "Server=tcp:oltcotest1.database.windows.net,1433;Initial Catalog=OltcoTest1;Persist Security Info=False;User ID=emmagreening;Password=Muldermoo1!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
+        // User ID = emmagreening; Password=Muldermoo1!
         // adding Installation Details
         //To View all customer and installation details    
         public IEnumerable<Customer> GetAllCustomers() //(already added installation table to procedure)
